@@ -39,10 +39,10 @@ public class S3Service {
         return objectAsBytes.asByteArray();
     }
 
-//    public void deleteFile(String key) {
-//        s3Client.deleteObject(DeleteObjectRequest.builder()
-//                .bucket(bucketName)
-//                .key(key)
-//                .build());
-//    }
+    public void deleteFile(String key) {
+        s3Client.deleteObject(DeleteObjectRequest.builder()
+                .bucket(bucketName)
+                .key(key)
+                .build());
+    }
 }
